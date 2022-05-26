@@ -9,6 +9,7 @@ _List of changes compared to the original:_
 By @jesuscc1993:
 
 - Added support for the `file` protocol.
+- Changed options page to dark theme.
 - Fixed zero values loaded from storage not being set in the form.
 
 By others:
