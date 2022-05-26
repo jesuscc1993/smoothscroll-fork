@@ -9,6 +9,7 @@
     'animationTime',
     'stepSize',
     'arrowScroll',
+    'spaceScroll',
     'middleMouse',
     'accelerationMax',
     'accelerationDelta',
@@ -180,6 +181,13 @@
       animationTime: 120,
       stepSize: 120,
       pulseAlgorithm: 'false',
+    },
+
+    _edge: {
+      animationTime: 150,
+      stepSize: 100,
+      pulseAlgorithm: 'true',
+      pulseScale: 4,
     },
 
     _ie9: {

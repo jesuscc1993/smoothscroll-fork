@@ -206,47 +206,55 @@ label[title], .help  { cursor:help;  }
 <button id="default">Default</button>
 <button id="iphone">iPhone</button>
 <button id="opera">Opera</button>
+<button id="edge">Edge</button>
 <button id="ie9">IE</button>
 </div>
 
 <br />
 
-<table border="0" cellpadding="0" cellspacing="2" style="font-size: 12px; margin-left: 6px">
- <tr>
-  <td class="setting-name"><label for="stepSize" title="higher means more scrolling for each mouse event">Step size [px]</label></td>
-  <td><input id="stepSize" type="text" size="1" maxlength="3"> </td>
-  <td class="default_value"><span style="color: #00CCFF; font-size: 12px;"> <i>Default value: 100</i></span></td>
-  <td class="note" title="higher means more scrolling for each mouse event">(<b>how</b> much)</td>
- </tr>
- <tr>
-  <td class="setting-name"><label for="animationTime" title="higher number stretches animation">Animation time [ms]</label></td>
-  <td><input id="animationTime" type="text" size="1" maxlength="3"> </td>
-  <td class="default_value"><span style="color: #00CCFF; font-size: 12px;"> <i>Default value: 400</i></span></td>
-  <td class="note" title="higher number stretches animation">(<b>how</b> quick)</td>
- </tr>
- <tr>
-  <td class="setting-name"><label for="accelerationMax" title="how much scrolling can accelerate">Acceleration scale</label></td>
-  <td><input id="accelerationMax" type="text" size="1" maxlength="3"></td>
-  <td class="default_value"><span style="color: #00CCFF; font-size: 12px;"> <i>Default value: 3</i></span></td>
-  <td class="note" title="how much scrolling can accelerate">(<b>how </b>swift)</td>
-</tr>
- <tr>
-  <td class="setting-name"><label for="accelerationDelta" title="lower means acceleration kicks in more frequently">Acceleration delta [ms]</label></td>
-  <td><input id="accelerationDelta" type="text" size="1" maxlength="2"></td>
-  <td class="default_value"><span style="color: #00CCFF; font-size: 12px;"> <i>Default value: 50</i></span></td>
-  <td class="note" title="lower means acceleration kicks in more frequently">(<b>time</b> between scroll events)</td>
-</tr>
- <tr>
-  <td class="setting-name"><label for="pulseScale" title="it affects how long the decceleration part is">Pulse Scale</label></td>
-  <td><input id="pulseScale" type="text" size="1" maxlength="2"></td>
-  <td class="default_value"><span style="color: #00CCFF; font-size: 12px;"> <i>Default value: 4</i></span></td>
-  <td class="note" title="it affects how long the decceleration part is">(<b>ratio </b>of "tail" to "acceleration")</td>
-</tr>
- <tr>
-  <td style="width:180px;"><label for="arrowScroll" title="higher means more scrolling for each arrow key press">Arrow key step size [px]</label></td>
-  <td><input id="arrowScroll" type="text" size="1" maxlength="3"> </td>
-  <td class="default_value" ><span style="color: #00CCFF; font-size: 12px;"> <i>Default value: 50</i></span></td>
- </tr>
+<table cellpadding="0" cellspacing="2" style="font-size: 12px; margin-left: 6px">
+  <tr>
+    <td class="setting-name"><label for="stepSize" title="higher means more scrolling for each mouse event">Wheel step size [px]</label></td>
+    <td><input id="stepSize" type="text" size="1" maxlength="3"> </td>
+    <td class="default_value"><span style="color: #00CCFF; font-size: 12px;"> <i>Default value: 100</i></span></td>
+    <td class="note" title="higher means more scrolling for each mouse event">(distance that will be traveled on each <b>wheel scroll</b>)</td>
+  </tr>
+  <tr>
+    <td style="width:180px;"><label for="arrowScroll" title="higher means more scrolling for each arrow key press">Arrow key step size [px]</label></td>
+    <td><input id="arrowScroll" type="text" size="1" maxlength="3"> </td>
+    <td class="default_value" ><span style="color: #00CCFF; font-size: 12px;"> <i>Default value: 50</i></span></td>
+    <td class="note" title="higher means more scrolling for each arrow key press">(distance that will be traveled on each <b>arrow press</b>)</td>
+  </tr>
+  <tr>
+    <td class="setting-name"><label for="spaceScroll" title="higher means more scrolling for each spacebar key press">Spacebar step size [%]</label></td>
+    <td><input id="spaceScroll" type="text" size="1" maxlength="3"></td>
+    <td class="default_value"><span style="color: #00CCFF; font-size: 12px;"> <i>Default value: 0.9</i></span></td>
+    <td class="note" title="higher means more scrolling for each spacebar key press">(fraction of the available viewport that will be traveled on each <b>spacebar press</b>)</td>
+  </tr>
+  <tr>
+    <td class="setting-name"><label for="animationTime" title="higher number stretches animation">Animation time [ms]</label></td>
+    <td><input id="animationTime" type="text" size="1" maxlength="3"> </td>
+    <td class="default_value"><span style="color: #00CCFF; font-size: 12px;"> <i>Default value: 400</i></span></td>
+    <td class="note" title="higher number stretches animation">(for <b>how long</b> the animation will be played)</td>
+  </tr>
+  <tr>
+    <td class="setting-name"><label for="accelerationDelta" title="lower means acceleration kicks in more frequently">Acceleration delta [ms]</label></td>
+    <td><input id="accelerationDelta" type="text" size="1" maxlength="2"></td>
+    <td class="default_value"><span style="color: #00CCFF; font-size: 12px;"> <i>Default value: 50</i></span></td>
+    <td class="note" title="lower means acceleration kicks in more frequently">(<b>time</b> between scroll events)</td>
+  </tr>
+  <tr>
+    <td class="setting-name"><label for="accelerationMax" title="how much scrolling can accelerate">Acceleration scale</label></td>
+    <td><input id="accelerationMax" type="text" size="1" maxlength="3"></td>
+    <td class="default_value"><span style="color: #00CCFF; font-size: 12px;"> <i>Default value: 3</i></span></td>
+    <td class="note" title="how much scrolling can accelerate">(<b>how </b>swift)</td>
+  </tr>
+  <tr>
+    <td class="setting-name"><label for="pulseScale" title="it affects how long the decceleration part is">Pulse Scale</label></td>
+    <td><input id="pulseScale" type="text" size="1" maxlength="2"></td>
+    <td class="default_value"><span style="color: #00CCFF; font-size: 12px;"> <i>Default value: 4</i></span></td>
+    <td class="note" title="it affects how long the decceleration part is">(<b>ratio </b>of "tail" to "acceleration")</td>
+  </tr>
 </table>
 <br>
 

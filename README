@@ -1,8 +1,19 @@
+## Description
+
 Fork of the now abandoned https://github.com/gblazex/smoothscroll
 
-List of changes compared to the original:
+## Changelog
 
-- Fixed zero values loaded from storage not being set in the form (@jesuscc1993).
+_List of changes compared to the original:_
+
+By @jesuscc1993:
+
+- Added support for the `file` protocol.
+- Fixed zero values loaded from storage not being set in the form.
+
+By others:
+
+- Added step customization support for spacebar scrolling (@artofvs).
 - Prevented hijacking keyboard input on web components (@brettflorio).
 
 Original readme below:
