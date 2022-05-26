@@ -3,7 +3,7 @@
   <head>
     <title>SmoothScroll Options</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="options.css"></style>
+    <link rel="stylesheet" href="options.css" />
     <script src="../src/sscr.js"></script>
     <script src="../src/middlemouse.js"></script>
   </head>
@@ -30,7 +30,7 @@
 
       <!-- -->
       <div id="profiles">
-        &nbsp;&nbsp;<i
+        <i
           class="help"
           title="Don't forget to hit 'Save' if you want to use them!"
           >Load profile:</i
@@ -45,7 +45,7 @@
 
       <br />
 
-      <table cellspacing="2" style="font-size: 12px; margin-left: 6px">
+      <table>
         <tr>
           <td class="setting-name">
             <label
@@ -55,10 +55,8 @@
             >
           </td>
           <td><input id="stepSize" type="text" size="1" maxlength="3" /></td>
-          <td class="default_value">
-            <span style="color: #00ccff; font-size: 12px">
-              <i>Default value: 100</i></span
-            >
+          <td>
+            <span class="primary"> <i>Default value: 100</i></span>
           </td>
           <td
             class="note"
@@ -68,7 +66,7 @@
           </td>
         </tr>
         <tr>
-          <td style="width: 180px">
+          <td style="width: 224px">
             <label
               for="arrowScroll"
               title="higher means more scrolling for each arrow key press"
@@ -76,10 +74,8 @@
             >
           </td>
           <td><input id="arrowScroll" type="text" size="1" maxlength="3" /></td>
-          <td class="default_value">
-            <span style="color: #00ccff; font-size: 12px">
-              <i>Default value: 50</i></span
-            >
+          <td style="width: 160px">
+            <span class="primary"> <i>Default value: 50</i></span>
           </td>
           <td
             class="note"
@@ -97,10 +93,8 @@
             >
           </td>
           <td><input id="spaceScroll" type="text" size="1" maxlength="3" /></td>
-          <td class="default_value">
-            <span style="color: #00ccff; font-size: 12px">
-              <i>Default value: 0.9</i></span
-            >
+          <td>
+            <span class="primary"> <i>Default value: 0.9</i></span>
           </td>
           <td
             class="note"
@@ -119,10 +113,8 @@
           <td>
             <input id="animationTime" type="text" size="1" maxlength="3" />
           </td>
-          <td class="default_value">
-            <span style="color: #00ccff; font-size: 12px">
-              <i>Default value: 400</i></span
-            >
+          <td>
+            <span class="primary"> <i>Default value: 400</i></span>
           </td>
           <td class="note" title="higher number stretches animation">
             (for <b>how long</b> the animation will be played)
@@ -139,10 +131,8 @@
           <td>
             <input id="accelerationDelta" type="text" size="1" maxlength="2" />
           </td>
-          <td class="default_value">
-            <span style="color: #00ccff; font-size: 12px">
-              <i>Default value: 50</i></span
-            >
+          <td>
+            <span class="primary"> <i>Default value: 50</i></span>
           </td>
           <td
             class="note"
@@ -162,10 +152,8 @@
           <td>
             <input id="accelerationMax" type="text" size="1" maxlength="3" />
           </td>
-          <td class="default_value">
-            <span style="color: #00ccff; font-size: 12px">
-              <i>Default value: 3</i></span
-            >
+          <td>
+            <span class="primary"> <i>Default value: 3</i></span>
           </td>
           <td class="note" title="how much scrolling can accelerate">
             (<b>how </b>swift)
@@ -180,10 +168,8 @@
             >
           </td>
           <td><input id="pulseScale" type="text" size="1" maxlength="2" /></td>
-          <td class="default_value">
-            <span style="color: #00ccff; font-size: 12px">
-              <i>Default value: 4</i></span
-            >
+          <td>
+            <span class="primary"> <i>Default value: 4</i></span>
           </td>
           <td
             class="note"
@@ -199,46 +185,41 @@
 
       <input type="checkbox" id="keyboardSupport" /><label for="keyboardSupport"
         >Enable <b>keyboard support</b></label
-      ><br /><br />
+      ><br />
 
       <input type="checkbox" id="touchpadSupport" /><label for="touchpadSupport"
         >Enable <b>touchpad support</b></label
-      ><br /><br />
+      ><br />
 
       <input type="checkbox" id="pulseAlgorithm" /><label
         for="pulseAlgorithm"
         title="adds easing to the animations"
         >Enable <b>pulse algorithm</b></label
-      ><br /><br />
+      ><br />
 
       <input type="checkbox" id="middleMouse" /><label
         for="middleMouse"
         title="scroll smooth with the middle mouse button"
         >Enable <b>middle mouse</b> scrolling</label
-      ><br /><br />
+      ><br />
 
       <input type="checkbox" id="fixedBackground" /><label
         for="fixedBackground"
         title="disabling it improves performance on sites like twitter.com"
         >Enable <b>fixed backgrounds</b></label
-      ><br /><br />
-
-      <table border="0" cellspacing="2" style="font-size: 12px">
-        <!--
- <tr>
-  <td style="width:200px;"><label for="pgscroll">PgUp/PgDown step size [px]</label></td>
-  <td><input id="pgscroll" type="text" size="1" maxlength="4"> </td>
-  <td><span style="color: #00CCFF; font-size: 12px;"> <i>Default value: 800</i></span></td>
- </tr>
- -->
-      </table>
+      ><br />
 
       <br />
 
       <h2><label for="excluded">Excluded pages</label></h2>
-      <textarea id="excluded" cols="70" rows="5" placeholder="example.com, another.example.com"></textarea>
+      <textarea
+        id="excluded"
+        cols="70"
+        rows="5"
+        placeholder="example.com, another.example.com"
+      ></textarea>
 
-      <br /><br />
+      <br />
 
       <button id="save">Save Settings</button>
 
@@ -252,7 +233,7 @@
         >
       </div>
 
-      <hr/>
+      <hr />
 
       <div id="footer">
         <div>
@@ -295,7 +276,7 @@
     </div>
     <!-- /#page -->
 
-    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br />
 
     <div class="dialog">
       <div class="dialog-header">Settings saved</div>
@@ -308,83 +289,65 @@
       <h1>Test your settings!</h1>
 
       <h2>By scrolling on this long page.</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non
-        orci ipsum, eu laoreet nisl. Suspendisse ut dictum neque. Pellentesque
-        nulla ipsum, posuere ut mattis vel, dapibus fringilla arcu. Donec
-        fermentum purus in risus convallis semper. Nullam tempor urna eu libero
-        vulputate vitae pulvinar enim accumsan. Donec vitae leo a enim faucibus
-        consectetur. Nullam lectus justo, eleifend quis condimentum ut, pharetra
-        et risus. Ut luctus molestie nibh sit amet vestibulum. Vestibulum tempor
-        luctus scelerisque. Duis posuere elementum mollis. Cras sit amet varius
-        massa. Nulla condimentum feugiat aliquam. Pellentesque habitant morbi
-        tristique senectus et netus et malesuada fames ac turpis egestas. Aenean
-        id ante et diam lacinia convallis vel eu magna.
-      </p>
-
-      <p>
-        In congue, risus sed commodo molestie, tortor sem dictum neque, in
-        viverra sapien arcu vulputate velit. Pellentesque nec dignissim neque.
-        Proin non felis quis lectus fermentum lobortis ut nec purus. Nam quam
-        turpis, sodales in pellentesque vel, tempor gravida lacus. Pellentesque
-        euismod aliquet pulvinar. Class aptent taciti sociosqu ad litora
-        torquent per conubia nostra, per inceptos himenaeos. Sed tempus velit in
-        lacus tristique facilisis. Mauris commodo, nunc et tempor pharetra,
-        lectus dui posuere odio, eu auctor lorem augue non neque. Aenean auctor
-        velit ac erat lobortis iaculis. Nullam in nibh et sem porttitor
-        malesuada non non urna. Nulla lacus est, aliquet vel egestas a, accumsan
-        a ante. Sed semper molestie dictum. Morbi at quam non enim porttitor
-        varius. Vivamus ut metus et enim egestas ornare malesuada at augue.
-      </p>
-
-      <p>
-        Morbi laoreet velit sit amet metus tincidunt hendrerit. Aliquam augue
-        ante, venenatis a rutrum sit amet, tristique non urna. Suspendisse et
-        euismod nunc. Donec tempus luctus convallis. Proin blandit justo in
-        nulla volutpat imperdiet. Integer dapibus lectus vitae libero hendrerit
-        commodo. Praesent felis metus, pretium id tempus sed, porttitor ut
-        justo. Praesent dapibus massa a erat congue malesuada. Fusce at erat in
-        augue lobortis ultrices. Fusce vitae nunc sed arcu viverra convallis.
-        Etiam nec magna turpis, id iaculis dui. Etiam at interdum est. Ut quis
-        eros justo, vel consequat dolor. Proin pulvinar tristique congue. Mauris
-        consectetur aliquam ipsum lobortis tempor. In non ligula orci, a commodo
-        turpis. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. Integer non tempus lectus. Praesent
-        tristique ante a purus lobortis viverra.
-      </p>
-
-      <p>
-        Curabitur eget leo velit, ac sagittis arcu. Mauris pulvinar orci et
-        libero ultricies non iaculis velit gravida. Nulla facilisi. Pellentesque
-        vel tellus nisl, et eleifend turpis. Vestibulum accumsan tincidunt
-        tellus ac posuere. Nunc et orci metus. Cras quis lacus at tortor semper
-        sollicitudin. Sed mi velit, semper et eleifend eget, faucibus mattis
-        velit. Quisque interdum, risus et vulputate cursus, mauris elit
-        fermentum nunc, in imperdiet ipsum odio sed magna. Vivamus porttitor
-        ornare lacus in congue. Morbi et justo nulla, non tincidunt eros. Nulla
-        scelerisque, tortor eget pulvinar volutpat, ante justo dapibus arcu, eu
-        lacinia quam ante ut libero. Integer porta libero eu est scelerisque
-        malesuada. Sed risus diam, pellentesque eu euismod sit amet, rhoncus
-        quis velit. Aliquam et vehicula odio. Cum sociis natoque penatibus et
-        magnis dis parturient montes, nascetur ridiculus mus. Pellentesque nec
-        magna nec odio venenatis sollicitudin non id massa. Cum sociis natoque
-        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut in
-        eleifend mauris.
-      </p>
-
-      <p>
-        Sed ac scelerisque nisl. Vivamus ac diam et nibh pulvinar gravida vitae
-        a magna. Fusce ipsum ligula, suscipit sit amet ullamcorper a, fringilla
-        sed neque. Curabitur ipsum dolor, consectetur condimentum luctus nec,
-        molestie eu nulla. Curabitur eros nunc, varius at vestibulum sed,
-        tincidunt aliquam risus. Aenean ultricies iaculis augue. Sed tempor
-        scelerisque velit, et dignissim erat hendrerit gravida. Mauris
-        consectetur porta lacus vel posuere. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Ut diam diam, tempus mattis interdum nec,
-        tincidunt in ante. Pellentesque lacus ipsum, eleifend non imperdiet id,
-        dapibus vel metus. Proin egestas sagittis urna facilisis congue. Fusce
-        nec dapibus nibh.
-      </p>
+      <div id="lipsum">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          sed velit consequat, tempus ipsum non, hendrerit ex. Sed accumsan eros
+          in ex bibendum egestas. Sed sed arcu vitae nibh luctus mattis in in
+          est. Integer ullamcorper nulla tortor, gravida luctus ipsum pulvinar
+          luctus. Curabitur placerat dui non sem tincidunt molestie. Ut ac dolor
+          vitae purus convallis ullamcorper. Quisque laoreet eros ligula, eget
+          tincidunt est iaculis vitae. Nunc in diam lorem. Vestibulum eget
+          ligula tincidunt, dapibus mauris eget, malesuada nibh. Class aptent
+          taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+          himenaeos. Fusce sagittis, mauris rhoncus volutpat hendrerit, ipsum
+          orci tempus lorem, fermentum euismod sapien enim in felis. Donec ac
+          nulla porta turpis vestibulum suscipit.
+        </p>
+        <p>
+          Nam egestas eros vitae ligula placerat, at euismod diam semper.
+          Pellentesque justo turpis, malesuada tristique odio hendrerit,
+          interdum cursus dolor. Sed porttitor mollis facilisis. Integer
+          interdum tristique mi. Orci varius natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus. Nam orci ex, rhoncus nec
+          massa sed, pretium condimentum sapien. Maecenas libero odio, posuere a
+          turpis ut, porttitor mollis lacus. Mauris facilisis, augue rhoncus
+          faucibus maximus, erat est luctus ex, vel euismod augue nisl et
+          mauris. Nulla ac nisl dolor.
+        </p>
+        <p>
+          Nulla ac lorem vel lorem dictum porta at a erat. Praesent ultricies mi
+          dolor, sit amet porttitor neque ornare nec. Proin non mi sapien. Sed
+          vulputate arcu vel risus pellentesque, eu ultricies elit venenatis.
+          Fusce ut nisi id felis gravida consequat. Donec mollis lectus elit, et
+          ultrices massa blandit porta. Suspendisse potenti. Aliquam mattis
+          egestas luctus. Curabitur ullamcorper dignissim egestas. Nam nec
+          libero consectetur, posuere lorem convallis, tempus lectus. Nam
+          pulvinar tellus purus, vel efficitur enim accumsan et. Morbi vel ipsum
+          orci.
+        </p>
+        <p>
+          Nam vel ligula id eros fermentum vehicula. Fusce varius metus id
+          accumsan fringilla. Ut semper ligula mauris, id rutrum lacus faucibus
+          id. Aliquam fringilla purus felis, in aliquam ante efficitur a. Cras
+          laoreet quis diam nec tincidunt. Sed rhoncus sed elit et consectetur.
+          Nullam tellus arcu, blandit eget sapien sed, ullamcorper placerat ex.
+          Vivamus tristique eget libero vitae fringilla. Proin tincidunt felis
+          felis, eu pulvinar odio venenatis eu. Nulla ut venenatis enim, at
+          convallis massa.
+        </p>
+        <p>
+          Mauris eget sem et urna elementum auctor. Vivamus sodales cursus nunc,
+          pretium accumsan magna molestie id. Pellentesque ultrices turpis quis
+          eros tincidunt feugiat. Nullam pharetra, quam et congue sagittis, odio
+          dui luctus urna, quis accumsan tellus metus eget ipsum. Vivamus
+          condimentum tincidunt odio, imperdiet consequat ex volutpat non. Nunc
+          massa turpis, ultricies sit amet metus quis, finibus suscipit ante.
+          Donec viverra sagittis felis quis feugiat. In et hendrerit purus.
+          Integer malesuada, sapien efficitur condimentum vehicula, nulla mauris
+          molestie tortor, ac dapibus nisl orci et risus.
+        </p>
+      </div>
     </div>
 
     <script src="options.js"></script>
