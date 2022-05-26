@@ -44,13 +44,16 @@ li {
 }
 
 #title {
+  background-image: url(../img/128n.png);
   background-position: 0% 50%;
   background-repeat: no-repeat;
+  background-size: contain;
   font-size: 40px;
   font-weight: bold;
   margin: 30px auto;
+  padding-left: 64px;
   text-align: left;
-  width: 300px;
+  width: 396px;
 }
 
 #title a {
