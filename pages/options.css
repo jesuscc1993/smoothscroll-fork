@@ -1,0 +1,201 @@
+:root {
+  --c-foreground: #eee;
+  --c-primary: #0cf;
+  --c-box: #fff1;
+}
+
+body {
+  background: #111;
+  color: var(--c-foreground);
+  font-family: Verdana, sans-serif;
+  font-size: 13.4px;
+  margin: 0;
+  zoom: 1.35;
+}
+
+a {
+  border-bottom: 1px dotted #ccc;
+  color: var(--c-foreground);
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 1px solid var(--c-primary);
+  color: var(--c-primary);
+  text-decoration: none;
+}
+hr {
+  margin: 0;
+}
+h1 {
+  text-shadow: transparent 0 0 1px;
+}
+h2 {
+  color: var(--c-primary);
+  font-size: 16px;
+  margin: 20px 0 15px 0;
+}
+li {
+  padding: 2px 0;
+}
+
+#page {
+  background: #222;
+  border-radius: 20px;
+  box-shadow: #000 -2px 2px 10px;
+  margin: 0 auto 10px;
+  padding: 30px;
+  text-align: left;
+  width: 800px;
+}
+
+#title {
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 30px auto;
+  text-align: left;
+  text-shadow: transparent 0 0 1px;
+  width: 300px;
+}
+
+#title a {
+  border: none;
+  color: var(--c-primary);
+}
+
+input[type='text'],
+textarea {
+  background-color: var(--c-box);
+  border-radius: 4px;
+  border: none;
+  box-shadow: #000 0px 0px 3px;
+  outline: none;
+}
+
+input[type='text']:focus,
+textarea:focus {
+  box-shadow: var(--c-primary) 0px 0px 3px;
+}
+
+input[type='text'] {
+  color: var(--c-foreground);
+  margin-right: 10px;
+  padding: 3px;
+  text-align: center;
+  width: 38px;
+}
+
+textarea {
+  color: var(--c-foreground);
+  padding: 10px;
+  width: 770px;
+}
+
+#save {
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  margin: 0 auto;
+  width: 160px;
+}
+
+button {
+  background: #444;
+  border-radius: 5px;
+  border: none;
+  color: var(--c-foreground);
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: all 0.15s ease-out;
+}
+button:active,
+button:hover {
+  background: #30bcff;
+}
+
+.note {
+  color: #666;
+  cursor: help;
+  font-size: 80%;
+  padding-left: 10px;
+}
+
+label[title],
+.help {
+  cursor: help;
+}
+.setting-name {
+  width: 150px;
+}
+
+.dialog {
+  background-color: #111;
+  border-radius: 8px 8px 0 0;
+  bottom: 0;
+  color: var(--c-foreground);
+  display: none;
+  left: 50%;
+  margin-left: -260px;
+  opacity: 0;
+  padding: 30px;
+  position: fixed;
+  text-align: center;
+  transition: opacity 1s ease-in-out;
+  width: 460px;
+}
+
+.dialog-header {
+  color: #999;
+  font: bold 20px 'arial black', arial;
+}
+
+.dialog a {
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#footer {
+  border-top: 20px solid var(--c-box);
+  margin-top: 40px;
+}
+
+#footer li {
+  margin: 5px 0;
+}
+
+#test {
+  margin: 0 auto;
+  width: 800px;
+}
+#test div {
+  margin: 20px 0;
+}
+
+#version-container {
+  background: var(--c-box);
+  color: #222;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: normal;
+  height: 10px;
+  margin-top: 5px;
+  text-align: center;
+  width: 300px;
+}
+
+#version {
+  background: #333;
+  color: #999;
+  padding: 0 8px;
+  position: relative;
+  top: -8px;
+}
+
+#thanks {
+  margin: 30px 0 0;
+  text-align: center;
+}
