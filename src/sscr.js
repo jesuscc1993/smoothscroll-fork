@@ -327,7 +327,8 @@ function wheel(event) {
 
   // leave early if default action is prevented
   // or it's a zooming event with CTRL
-  if (event.defaultPrevented || event.ctrlKey) {
+  // or it's a horizontal scrolling event with SHIFT
+  if (event.defaultPrevented || event.ctrlKey || event.shiftKey) {
     return true;
   }
 

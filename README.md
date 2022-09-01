@@ -10,6 +10,7 @@ By @jesuscc1993:
 
 - Added support for the `file` protocol.
 - Changed options page to dark theme.
+- Fixed horizontal scrolling (by holding shift) triggering vertical scrolling as well.
 - Fixed zero values loaded from storage not being set in the form.
 
 By others:
