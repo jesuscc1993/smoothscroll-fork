@@ -643,12 +643,12 @@ function postScrollToParent(deltaX, deltaY) {
  * HELPERS
  ***********************************************/
 
-function addEvent(type, fn) {
-  window.addEventListener(type, fn, false);
+function addEvent(type, fn, options = false) {
+  window.addEventListener(type, fn, options);
 }
 
-function removeEvent(type, fn) {
-  window.removeEventListener(type, fn, false);
+function removeEvent(type, fn, options = false) {
+  window.removeEventListener(type, fn, options);
 }
 
 function isNodeName(el, tag) {
@@ -766,7 +766,7 @@ function pulse(x) {
 var wheelEvent =
   'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
 
-addEvent(wheelEvent, wheel);
+addEvent(wheelEvent, wheel, { passive: false });
 addEvent('mousedown', mousedown);
 addEvent('keydown', keydown);
 addEvent('load', loaded);
